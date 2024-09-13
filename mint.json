@@ -6,7 +6,7 @@
     "light": "/logo/logo.svg"
   },
   "theme": "quill",
-  "favicon": "/favicon.svg",
+  "favicon": "/images/favicon.svg",
   "colors": {
     "primary": "#0D9373",
     "light": "#07C983",
@@ -18,7 +18,7 @@
   },
   "topbarLinks": [
     {
-      "name": "Support",
+      "name": "Get in touch",
       "url": "mailto:andrei@askmanu.co"
     }
   ],
@@ -28,11 +28,9 @@
   },
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Getting Started",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        "about"
       ]
     },
     {
@@ -45,25 +43,11 @@
         "essentials/navigation",
         "essentials/reusable-snippets"
       ]
-    },
-    {
-      "group": "API Documentation",
-      "pages": [
-        "api-reference/introduction"
-      ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
-      ]
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "x": "https://x.com/askmanu",
+    "github": "https://github.com/askmanu",
+    "linkedin": "https://www.linkedin.com/company/askmanu"
   }
 }
