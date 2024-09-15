@@ -28,20 +28,25 @@
   },
   "navigation": [
     {
-      "group": "Getting Started",
+      "group": "ask manu",
       "pages": [
         "about"
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Getting Started",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "getting-started/questions",
+        "getting-started/chat",
+        "getting-started/projects"
+      ]
+    },
+    {
+      "group": "Legal",
+      "pages": [
+        "legal/tos",
+        "legal/privacy",
+        "legal/code"
       ]
     }
   ],
