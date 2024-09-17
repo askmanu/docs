@@ -19,9 +19,9 @@ Think of Questions as Perplexity, but for devs.
 
 ### Relevant
 
-manu uses [Sonnet 3.5](https://www.anthropic.com/news/claude-3-5-sonnet) from Anthropic to generate answers for questions. It has proven many times that is the most powerful model for coding or coding related queries.
+manu uses [Sonnet 3.5](https://www.anthropic.com/news/claude-3-5-sonnet) from Anthropic to generate answers for questions. It has proven many times that is the most powerful model for coding or coding related tasks.
 
-More so, we've indexed documentation from popular npm packages (more to come soon) so you get back references to the original docs that were used when generating an answer.
+More so, we've indexed documentation from popular npm packages (more package managers coming soon) so you get back references to the original docs that were used when generating the answer.
 
 ![sources](../images/sources.png)
 
@@ -29,11 +29,15 @@ More so, we've indexed documentation from popular npm packages (more to come soo
 
 ### Search for a specific version
 
-A pain that we encounter sometime is when we find a great answer / blogpost online for a problem we have and it is not for the version of the library that we are using. With manu, you can specify exactly the version that you want to be used when generating an answer:
+A pain that we encounter sometimes is when we find a great answer / blogpost online it is not for the version of the library that we're using. 
 
-<Frame caption="Asking a question for a specific version">
+With manu, you can mention a library, by using the `@` symbol and even specify exactly the version that you are interested in:
+
+<Frame caption="Asking a question about a specific version">
   <img src="../images/specific-version.png" />
 </Frame>
+
+
 
 <Frame caption="If no version is specified, we use that latest available">
   <img src="../images/latest-version.png" />
@@ -45,7 +49,7 @@ We cache answers from other users that have asked the same question (or a simila
 
 ![cached-answer-exact](../images/cached-answer-exact.png)
 
-If you search for an question that is very similar to an asked question, we will also return a cached response. If you feel that that answer is not relevant, you can generate a new one specifically for your question.
+If you search for an question that is very similar to an existing one, we also return a cached response. If you feel that the answer is not relevant, you can generate a new one specifically for your question.
 
 ![cached-answer-similar](../images/cached-answer-similar.png)
 
