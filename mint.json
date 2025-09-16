@@ -23,12 +23,12 @@
     }
   ],
   "topbarCtaButton": {
-    "name": "Ask manu",
+    "name": "To askmanu",
     "url": "https://askmanu.co"
   },
   "navigation": [
     {
-      "group": "ask manu",
+      "group": "Introduction",
       "pages": [
         "about"
       ]
@@ -38,7 +38,8 @@
       "pages": [
         "getting-started/questions",
         "getting-started/chats",
-        "getting-started/projects"
+        "getting-started/projects",
+        "getting-started/generate-documentation"
       ]
     },
     {

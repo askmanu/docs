@@ -1,0 +1,54 @@
+---
+title: Generate documentation
+description: 'How askmanu generates documentation for your code base'
+---
+
+## About
+askmanu can update and generate new documentation for your repositories.
+
+## How it works
+
+The Github app listens to code changes and then decides what documentation needs to be created.
+
+For example, to create reference docs we parse every file and save stats about how well the file is documented.
+We then go through each of them and pick a handful that will be updated in the next batch.
+
+After we generate the docs and all checks pass, we open a PR with the changes.
+
+You don't need to ask manu to update the docs. It pro-actively does that for you.
+
+The documentation feature works one active PR at a time.
+
+As soon as the PR gets merged, we start working on the next batch of files.
+
+## Type of documentation
+
+These are the types of documentation that askmanu creates for your project:
+
+### Reference
+
+Reference documentation is an essential component of a project's documentation and forms a strong foundation with which you can build better docs.
+
+Reference docs are located directly in the code and explains the inputs / outputs of methods, what it does and sometimes even how to use it.
+
+<img src="/images/reference-docs-1.png" alt="Example of reference docs" />
+<img src="/images/reference-docs-2.png" alt="Example of reference docs" />
+
+After installing the [Github App](https://github.com/apps/askmanu), askmanu indexes your whole code base to detect the files that need new documentation.
+
+<Note>askmanu never saves the content of the code file on our end. We pull the content as needed from the repository on an as-needed basis. Check our [Privacy policy](/legal/privacy)</Note>
+
+### Higher level documentation `coming soon`
+
+This type of documentation includes any types of guides, walk throughs and explanations that help the dev team (or AI coding agents) understand the code base better.
+
+This are usually formatted in markdown and can leave in the `/docs` folder.
+
+For example, this is an example of a documentation structure for HuggingFace's [Accelerate](https://github.com/huggingface/accelerate) project:
+<img src="/images/reference-docs-1.png" alt="Example of reference docs" />
+
+After installing the Github app, askmanu indexes the existing documentation and looks for ways to improve it. These can be updating existing files or creating new ones.
+
+Once those are found, it creates a PR with the updates.
+
+After the PR gets merged, the app continues the process looking for new improvements.
